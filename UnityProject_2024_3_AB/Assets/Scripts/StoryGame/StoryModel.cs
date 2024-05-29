@@ -35,14 +35,14 @@ public class StoryModel : ScriptableObject
         public EventCheck eventCheck;
     }
 
-
+    [System.Serializable]
     public class EventCheck
     {
         public int checkValue;
 
         public enum EventType : int
         {
-            None,
+            NONE,
             GoToBattle,
             CheckSTR,
             CheckDEX,
@@ -53,11 +53,11 @@ public class StoryModel : ScriptableObject
         }
 
         public EventType eventType;
-
         public Result[] sucessResult;
         public Result[] failResult;
     }
 
+    [System.Serializable]
 
     public class Result
     {
